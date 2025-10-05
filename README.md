@@ -1,14 +1,12 @@
-# Basic FastAPI REST API
+# Moscow Hexagon FastAPI REST API
 
-This is a basic skeleton for a REST API application built with FastAPI with an improved project structure.
+This is a backend for a Moscow hexagon map
 
 ## Features
 
 - CRUD operations (Create, Read, Update, Delete)
 - Pydantic models for request/response validation
 - SQLAlchemy database integration
-- Built-in Swagger UI documentation
-- Health check endpoint
 
 ## Installation
 
@@ -33,12 +31,6 @@ Or using uvicorn directly:
 ```bash
 uvicorn app.main:app --reload
 ```
-
-## API Documentation
-
-Once the application is running, you can access:
-- Interactive API documentation: http://localhost:8000/docs
-- Alternative API documentation: http://localhost:8000/redoc
 
 ## Endpoints
 
