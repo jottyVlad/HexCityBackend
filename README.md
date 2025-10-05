@@ -42,16 +42,6 @@ Once the application is running, you can access:
 
 ## Endpoints
 
-### General
-- `GET /` - Health check
-
-### Items
-- `GET /items/` - Get all items
-- `GET /items/{id}` - Get item by ID
-- `POST /items/` - Create new item
-- `PUT /items/{id}` - Update item
-- `DELETE /items/{id}` - Delete item
-
 ### Hexagon Data
 - `GET /hexagons/` - Get all hexagon data
 - `GET /hexagons/{id}` - Get hexagon data by ID
@@ -59,25 +49,4 @@ Once the application is running, you can access:
 - `PUT /hexagons/{id}` - Update hexagon data
 - `PATCH /hexagons/{id}` - Partially update hexagon data
 - `DELETE /hexagons/{id}` - Delete hexagon data
-
-## Project Structure
-
-```
-.
-├── app/
-│   ├── __init__.py
-│   ├── main.py          # Main application file
-│   ├── database.py      # Database configuration
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── item.py      # Item model
-│   │   └── hexagon.py   # Hexagon data model
-│   ├── schemas/
-│   │   ├── __init__.py  # Item Pydantic schemas
-│   │   └── hexagon.py   # Hexagon data Pydantic schemas
-│   └── routes/
-│       ├── items.py     # Item routes
-│       └── hexagons.py  # Hexagon data routes
-├── requirements.txt     # Project dependencies
-└── README.md            # This file
-```
+- `GET /hexagons/{id}/metrics` - Get hexagon metric
